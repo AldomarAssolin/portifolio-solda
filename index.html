@@ -44,7 +44,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="media m-sm-0 m-auto">
-                    <a href="tel:55996186446"><span class="fa fa-2x fa-whatsapp mx-2 text-secondary"></span></a>
+                    <a href="https://web.whatsapp.com/send?phone=5555996186446"><span class="fa fa-2x fa-whatsapp mx-2 text-secondary"></span></a>
                     <a href="https://br.linkedin.com/in/aldomarassolin"><span class="fa fa-2x fa-linkedin mx-2 text-secondary"></span></a>
                     <a href="mailto:assolinaldomar@gmail.com"><span class="fa fa-2x fa-envelope mx-2 text-secondary"></span></a>
                     <a href="https://www.instagram.com/aldomarassolin/"><span class="fa fa-2x fa-instagram mx-2 text-secondary"></span></a>
@@ -71,7 +71,38 @@
                                     Soldador com 13 anos de experiência, especializado em  MIG/MAG com fontes convencionais, corrente pulsada e automatizadas.
                                 </p>
                             </div><!--banner_description_content-->
-                            <div class="btn_link w-100 text-center text-sm-start"><a class="btn_pdf btn bg-info m-auto" href="pdf/curriculum.pdf" target="_blank" rel="noopener"><i class="fa fa-download"></i> Currículo em PDF</a></div>
+                            <div class="btn_link w-100 text-center text-sm-center d-md-flex align-md-content-center justify-md-content-around">
+                                <a class="btn_pdf btn bg-info m-auto" href="pdf/curriculum.pdf" target="_blank" rel="noopener">
+                                    <i class="fa fa-download"></i> Currículo em PDF
+                                </a>
+                                <!-- Button trigger modal -->
+                                <button type="button" 
+                                    class="btn btn_pdf btn-info bg-transparent border-0 text-white-50" 
+                                    data-bs-toggle="modal" 
+                                    data-bs-target="#exampleModal">
+                                    <i class="fa fa-chevron-circle-down"></i>
+                                    Saiba mais...
+                                </button>
+                            </div>
+                            <!--MODAL-->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="modal_banner" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="modal_banner">Modal title</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                        ...
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">fechar</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--MODAL-->
                         </div><!--banner_description-->
                     </div><!--banner_description_box-->
                     <div class="banner_image_box py-3 d-flex align-items-center justify-content-center">
@@ -161,7 +192,7 @@
                     <div class="card mb-3 bg-transparent border-0" style="max-width: 1040px;">
                         <div class="row g-0">
                             <div class="col-sm-4 d-flex align-content-center justify-content-center">
-                                <img src="./images/experiencias/agrimec-logo.gif" class="img-fluid" alt="agrimec logo">
+                                <a href="https://agrimec.com.br" target="_blank" rel="noopener"><img src="./images/experiencias/agrimec-logo.gif" class="img-fluid" alt="agrimec logo"></a>
                             </div>
                             <div class="col-sm-8">
                                 <div class="card-body">
@@ -186,7 +217,7 @@
                     <div class="card mb-3 bg-transparent border-0" style="max-width: 1040px;">
                         <div class="row g-0">
                             <div class="col-sm-4 d-flex align-content-center justify-content-center">
-                                <img src="./images/experiencias/cofelma.jfif" class="img-fluid" alt="Cofelma logo">
+                                <a href="https://cofelma.com.br" target="_blank" rel="noopener"><img src="./images/experiencias/cofelma.jfif" class="img-fluid" alt="Cofelma logo"></a>
                             </div>
                             <div class="col-sm-8">
                                 <div class="card-body">
@@ -201,8 +232,6 @@
                                         <ul>
                                             <li class="text-white-50">Soldador</li>
                                             <li class="text-white-50">Montador</li>
-                                            <li class="text-white-50">Operador Soldagem</li>
-                                            <li class="text-white-50">Inspetor de Soldagem</li>
                                         </ul>
                                     </div><!--card-body-content-->
                                 </div><!--card-body-->
@@ -213,7 +242,7 @@
                     <div class="card mb-3 bg-transparent border-0" style="max-width: 1040px;">
                         <div class="row g-0">
                             <div class="col-sm-4 d-flex align-content-center justify-content-center">
-                                <img src="./images/experiencias/thor.jfif" class="img-fluid" alt="Thor Máquinas logo">
+                                <a href="https://www.thor.com.br" target="_blank" rel="noopener"><img src="./images/experiencias/thor.jfif" class="img-fluid" alt="Thor Máquinas logo"></a>
                             </div>
                             <div class="col-sm-8">
                                 <div class="card-body">
@@ -546,8 +575,14 @@
             <div class="contacts_details m-auto flex-grow-1 d-flex flex-column align-content-center justify-content-center">
                 <div class="contacts_details_content m-auto">
                     <h3 class="text-center pb-2 text-white">Contatos</h3>
-                    <p class="text-white-50"><i class="fa fa-phone"></i> (55) 9-9618-6446</p>
-                    <p class="text-white-50"><i class="fa fa-envelope"></i> assolinaldomar@gmail.com</p>
+                    <p class="contact_info text-white-50">
+                        <i class="fa fa-phone"></i>
+                         <a href="tel:55996186446" class="text-decoration-none text-white-50">(55) 9-9618-6446</a>
+                    </p>
+                    <p class="contact_info text-white-50">
+                        <i class="fa fa-envelope"></i> 
+                        <a href="mailto:assolinaldomar@gmail.com" class="text-decoration-none text-white-50">assolinaldomar@gmail.com</a>
+                    </p>
                     <p class="text-white-50"><i class="fa fa-map"></i> Santa Maria - RS</p>
                 </div>
             </div><!--contacts_details-->
@@ -557,7 +592,7 @@
                     <a href="index.html"><img src="images/logo100.png" alt="Aldomar Assolin" style="width: 150px;"></a>
                 </div>
                 <div class="media d-flex align-content-center justify-content-center">
-                    <a href="tel:55996186446"><span class="fa fa-whatsapp mx-2 text-secondary"></span></a>
+                    <a href="https://web.whatsapp.com/send?phone=5555996186446"><span class="fa fa-whatsapp mx-2 text-secondary"></span></a>
                     <a href="https://br.linkedin.com/in/aldomarassolin"><span class="fa fa-linkedin mx-2 text-secondary"></span></a>
                     <a href="mailto:assolinaldomar@gmail.com"><span class="fa fa-envelope mx-2 text-secondary"></span></a>
                     <a href="https://www.instagram.com/aldomarassolin/"><span class="fa fa-instagram mx-2 text-secondary"></span></a>
