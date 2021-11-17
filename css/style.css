@@ -239,7 +239,7 @@ header{
 /*FOOTER*/
 
 footer .contact_info:hover i{
-    color: #800080 !important;
+    color: #000!important;
 }
 
 footer .contact_info:hover a{
