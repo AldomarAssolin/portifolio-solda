@@ -1,0 +1,242 @@
+@font-face {
+    font-family: Open_Sans;
+    src: url('../fonts/Open_Sans/static/OpenSans/OpenSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('../fonts/Roboto/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: Oswald;
+    src: url('../fonts/Oswald/Oswald-VariableFont_wght.ttf');
+}
+
+:root{
+    --ff-text: normal 1rem Oswald 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --ff-title: Open_Sans 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --ff-extra: normal 1rem Roboto;
+}
+
+
+.collapse ul li a:hover{
+    color: #ccc !important;
+}
+
+.media a span:hover{
+    color: #fff !important;
+}
+
+main{
+    min-height: 80vh;
+
+    background-image: url('../images/bg/backgroundl.jpg');
+}
+
+/*HEADER*/
+
+header{
+    z-index: 999;
+}
+
+/*END HEADER*/
+
+/*SECTION BANNER*/
+
+#banner{
+    padding-top: 5rem;
+}
+
+#banner .banner .banner_description_box{
+    flex: 7;
+}
+
+#banner .banner .banner_description_box .banner_description{
+    max-width: 38rem;
+
+    font-family: var(--ff-extra);
+
+    box-shadow: 0px 0px 0px;
+}
+
+#banner .banner .banner_description_box .banner_description .btn_pdf:hover{
+    background: #01535e !important;
+    color: #fff;
+}
+
+#banner .banner .banner_image_box{
+    flex: 3;
+}
+
+#banner .banner .banner_image{
+    width: 14rem;
+    height: 14rem;
+
+    border-radius: 50%;
+
+    background: url('../images/perfil/Aldomar130.JPG') no-repeat center;
+    background-size: 100% 100%;
+    object-fit: fill;
+}
+
+@media(max-width:577px){
+    #banner .banner{
+        padding: 0;
+
+        display: flex;
+        flex-direction: column-reverse !important;
+    }
+    #banner .banner .banner_description_box{
+        width: 100%;
+    }
+}
+
+/*END SECTION BANNER*/
+
+/* SECTION PROCEDURE*/
+
+#procedure .procedure .Card{
+    width: 17.5rem !important;
+}
+
+#procedure .procedure .Card img{
+    width: 12rem !important;
+    height: 12rem !important;
+    border-radius: 50%;
+}
+
+#procedure .procedure .Card .card-body a:hover{
+    color: #b4b3b3 !important;
+}
+
+#procedure .procedure .Card .card-body a:hover i{
+    color: #fff !important;
+}
+
+@media(max-width:768px){
+    #procedure .procedure .Card{
+        width: 14.5rem !important;
+    }
+}
+
+@media(max-width:577px){
+    #procedure .procedure .Card{
+        width: 18.5rem !important;
+    }
+}
+
+@media(max-width:320px){
+    #procedure .procedure .Card{
+        width: 14.5rem !important;
+    }
+}
+
+/*END SECTION PROCEDURE*/
+
+/*SECTION EXPERIENCE*/
+
+#experience .experience .card img{
+    width: 20rem !important;
+    border-radius: 3rem;
+}
+
+@media(max-width:768px){
+    #experience .experience .card img{
+        width: 15rem !important;
+    }
+}
+
+/*END SECTION EXPERIENCE*/
+
+/*SECTION LEARNING*/
+
+#learning .learning .card{
+    width: 17.5rem;
+}
+
+@media(max-width:768px){
+    #learning .learning .card{
+        width: 14.5rem;
+    }
+}
+
+@media(max-width:577px){
+    #learning .learning .card{
+        width: 19.5rem;
+    }
+}
+
+@media(max-width:320px){
+    #learning .learning .card{
+        width: 14.5rem !important;
+    }
+}
+
+/*END SECTION LEARNING*/
+
+/*SECTION SOFTSKILLS*/
+
+#softSkills .softSkills .card .card_img{
+    flex: 5;
+}
+/*#6f42c1*/
+#softSkills .softSkills .card .card_img img{
+    width: 100%;
+    height: 100%;
+}
+
+#softSkills .softSkills .card .card_content{
+    flex: 5;
+}
+
+/*END SECTION SOFTSKILLS*/
+
+/* SECTION COURSES */
+
+#hardSkills .hardSkills .card_course{
+    width: 19rem;
+    height: 18rem;
+}
+
+#hardSkills .hardSkills .card img{
+    width: 4rem;
+}
+
+#hardSkills .hardSkills .card i{
+    color: #800080;
+}
+
+#hardSkills .hardSkills .card_informatica{
+    width: 10rem;
+}
+
+#hardSkills .hardSkills .card_informatica img{
+    width: 6rem;
+    height: 6rem;
+    margin: auto;
+    border-radius: 50%;
+}
+
+@media(max-width:768px){
+    #hardSkills .hardSkills .card_informatica{
+        width: 14rem;
+    }
+}
+
+@media(max-width:320px){
+    #hardSkills .hardSkills .card_course{
+        width: 16rem;
+        height: 18rem;
+    }
+}
+
+/*END SECTION COURSES */
+.contact_form{
+    max-width: 40rem;
+}
+
+/*footer*/
+#textarea{
+    resize: none;
+}
