@@ -61,8 +61,7 @@ header{
 }
 
 #banner .banner .banner_description_box .banner_description .btn_pdf:hover{
-    background: #01535e !important;
-    color: #fff;
+    color: #fff !important;
 }
 
 #banner .banner .banner_image_box{
