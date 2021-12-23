@@ -274,7 +274,7 @@ footer .contact_info:hover a{
 /* MEDIA QUERY */
 @media(max-width:768px){
     #banner{
-        margin-top: 3rem;
+        padding-top: 3rem;
     }
     #procedure .procedure .Card{
         width: 14.5rem !important;
