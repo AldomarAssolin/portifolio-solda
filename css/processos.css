@@ -1,0 +1,7 @@
+#mig_mag .container article p{
+    text-indent: 2rem;
+}
+
+article{
+    border-radius: 1.7rem;
+}

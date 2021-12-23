@@ -1,27 +1,38 @@
 @font-face {
     font-family: Open_Sans;
-    src: url('../fonts/Open_Sans/OpenSans-Regular.ttf');
+    src: url('../fonts/OpenSans-Regular.ttf');
 }
 
 @font-face {
     font-family: Roboto;
-    src: url('../fonts/Roboto/Roboto-Regular.ttf');
+    src: url('../fonts/Roboto-Regular.ttf');
 }
 
 @font-face {
     font-family: Oswald;
-    src: url('../fonts/Oswald/Oswald-VariableFont_wght.ttf');
+    src: url('../fonts/Oswald-VariableFont_wght.ttf');
+}
+
+.open_sans{
+    font-family: Open_Sans !important;
+}
+
+.roboto{
+    font-family: Roboto !important;
+}
+
+.oswald{
+    font-family: Oswald !important;
 }
 
 :root{
     --ff-text: normal 1rem Oswald 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     --ff-title: Open_Sans 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    --ff-extra: normal 1rem Roboto;
+    --ff-extra: normal 1rem Roboto 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-
 .collapse ul li a:hover{
-    color: #ccc !important;
+    color: #07c7ce !important;
 }
 
 .media a span:hover{
@@ -34,10 +45,15 @@ main{
     background-image: url('../images/bg/backgroundl.jpg');
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 /*HEADER*/
 
 header{
     z-index: 999;
+    transition: top 0.3s;
 }
 
 /*END HEADER*/
@@ -45,7 +61,9 @@ header{
 /*SECTION BANNER*/
 
 #banner{
-    padding-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #banner .banner .banner_description_box{
@@ -60,9 +78,8 @@ header{
     box-shadow: 0px 0px 0px;
 }
 
-#banner .banner .banner_description_box .banner_description .btn_pdf:hover{
-    background: #01535e !important;
-    color: #fff;
+#banner .banner .banner_description_box .banner_description .text-hover:hover{
+    color: #fff !important;
 }
 
 #banner .banner .banner_image_box{
@@ -80,21 +97,17 @@ header{
     object-fit: fill;
 }
 
-@media(max-width:577px){
-    #banner .banner{
-        padding: 0;
-
-        display: flex;
-        flex-direction: column-reverse !important;
-    }
-    #banner .banner .banner_description_box{
-        width: 100%;
-    }
+.modal-body p{
+    text-indent: 2rem;
 }
-
 /*END SECTION BANNER*/
 
 /* SECTION PROCEDURE*/
+
+#procedure{
+    margin-top: 0px;
+    animation: sectionExp 0.9s ease-in-out;
+}
 
 #procedure .procedure .Card{
     width: 17.5rem !important;
@@ -106,76 +119,82 @@ header{
     border-radius: 50%;
 }
 
-#procedure .procedure .Card .card-body a:hover{
+#procedure .procedure .Card .card-body{
+    height: 15rem;
+}
+
+#procedure .procedure .Card a:hover{
     color: #b4b3b3 !important;
 }
 
-#procedure .procedure .Card .card-body a:hover i{
+#procedure .procedure .Card a:hover i{
     color: #fff !important;
 }
 
-@media(max-width:768px){
-    #procedure .procedure .Card{
-        width: 14.5rem !important;
-    }
+#procedure .procedure .Card .card-body p{
+    height: 100%;
+    overflow: auto;
 }
 
-@media(max-width:577px){
-    #procedure .procedure .Card{
-        width: 18.5rem !important;
-    }
-}
+/* Scroll custom */
 
-@media(max-width:320px){
-    #procedure .procedure .Card{
-        width: 14.5rem !important;
-    }
-}
+.card-body p::-webkit-scrollbar {
+    width: 5pt;
+  }
+  
+.card-body p::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10pt;
+  }
+  
+.card-body p::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10pt;
+  }
+  
+.card-body p::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
 
 /*END SECTION PROCEDURE*/
 
+
+
 /*SECTION EXPERIENCE*/
+
+#experience{
+    margin-top: 0px;
+    transition: 1s;
+    animation: sectionExp 0.9s ease-in-out;
+}
+
 
 #experience .experience .card img{
     width: 20rem !important;
     border-radius: 3rem;
 }
-
-@media(max-width:768px){
-    #experience .experience .card img{
-        width: 15rem !important;
-    }
-}
-
 /*END SECTION EXPERIENCE*/
 
 /*SECTION LEARNING*/
+
+#learning{
+    margin-top: 0px;
+    animation: sectionLear 0.9s ease-in-out;
+}
 
 #learning .learning .card{
     width: 17.5rem;
 }
 
-@media(max-width:768px){
-    #learning .learning .card{
-        width: 14.5rem;
-    }
-}
-
-@media(max-width:577px){
-    #learning .learning .card{
-        width: 19.5rem;
-    }
-}
-
-@media(max-width:320px){
-    #learning .learning .card{
-        width: 14.5rem !important;
-    }
-}
-
 /*END SECTION LEARNING*/
 
 /*SECTION SOFTSKILLS*/
+
+#softSkills{
+    margin-top: 0px;
+    transition: 1s;
+    animation: sectionSoft 0.9s ease-in-out;
+}
 
 #softSkills .softSkills .card .card_img{
     flex: 5;
@@ -192,7 +211,13 @@ header{
 
 /*END SECTION SOFTSKILLS*/
 
-/* SECTION COURSES */
+/* SECTION HARDSKILLS */
+
+#hardSkills{
+    margin-top: 0px;
+    transition: 1s;
+    animation: sectionHard 0.9s ease-in-out;
+}
 
 #hardSkills .hardSkills .card_course{
     width: 19rem;
@@ -218,20 +243,14 @@ header{
     border-radius: 50%;
 }
 
-@media(max-width:768px){
-    #hardSkills .hardSkills .card_informatica{
-        width: 14rem;
-    }
-}
-
-@media(max-width:320px){
-    #hardSkills .hardSkills .card_course{
-        width: 16rem;
-        height: 18rem;
-    }
-}
-
 /*END SECTION COURSES */
+
+#conatct{
+    margin-top: 0px;
+    transition: 1s;
+    animation: sectionCont 0.9s ease-in-out;
+}
+
 .contact_form{
     max-width: 40rem;
 }
@@ -251,3 +270,53 @@ footer .contact_info:hover a{
 }
 
 /* END FOOTER*/
+
+/* MEDIA QUERY */
+@media(max-width:768px){
+    #banner{
+        margin-top: 3rem;
+    }
+    #procedure .procedure .Card{
+        width: 14.5rem !important;
+    }
+    #experience .experience .card img{
+        width: 15rem !important;
+    }
+    #hardSkills .hardSkills .card_informatica{
+        width: 14rem;
+    }
+    #learning .learning .card{
+        width: 14.5rem;
+    }
+}
+
+@media(max-width:577px){
+    #banner .banner{
+        padding: 0;
+
+        display: flex;
+        flex-direction: column-reverse !important;
+    }
+    #banner .banner .banner_description_box{
+        width: 100%;
+    }
+    #procedure .procedure .Card{
+        width: 18.5rem !important;
+    }
+    #learning .learning .card{
+        width: 19.5rem;
+    }
+}
+
+@media(max-width:320px){
+    #procedure .procedure .Card{
+        width: 14.5rem !important;
+    }
+    #hardSkills .hardSkills .card_course{
+        width: 16rem;
+        height: 18rem;
+    }
+    #learning .learning .card{
+        width: 14.5rem !important;
+    }
+}
