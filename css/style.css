@@ -111,6 +111,7 @@ header{
 
 #procedure .procedure .Card{
     width: 17.5rem !important;
+    height: auto;
 }
 
 #procedure .procedure .Card img{
@@ -231,7 +232,7 @@ header{
     color: #800080;
 }
 
-#hardSkills .hardSkills .card_informatica{
+#hardSkills .hardSkills .card_content .card_informatica{
     width: 10rem;
 }
 
