@@ -78,6 +78,10 @@ header{
     box-shadow: 0px 0px 0px;
 }
 
+#banner .banner .banner_description_box .banner_description .text-hover{
+    outline: none !important;
+}
+
 #banner .banner .banner_description_box .banner_description .text-hover:hover{
     color: #fff !important;
 }
