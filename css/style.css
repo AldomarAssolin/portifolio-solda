@@ -78,7 +78,7 @@ header{
     box-shadow: 0px 0px 0px;
 }
 
-#banner .banner .banner_description_box .banner_description .text-hover{
+#banner .banner .banner_description_box .banner_description .text-hover:focus{
     outline: none !important;
 }
 
