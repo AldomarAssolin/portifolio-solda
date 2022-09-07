@@ -1,0 +1,330 @@
+@font-face {
+    font-family: Open_Sans;
+    src: url('../fonts/OpenSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('../fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: Oswald;
+    src: url('../fonts/Oswald-VariableFont_wght.ttf');
+}
+
+.open_sans{
+    font-family: Open_Sans !important;
+}
+
+.roboto{
+    font-family: Roboto !important;
+}
+
+.oswald{
+    font-family: Oswald !important;
+}
+
+:root{
+    --ff-text: normal 1rem Oswald 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --ff-title: Open_Sans 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --ff-extra: normal 1rem Roboto 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.collapse ul li a:hover{
+    color: #07c7ce !important;
+}
+
+.media a span:hover{
+    color: #fff !important;
+}
+
+main{
+    min-height: 80vh;
+
+    background-image: url('../image/bg/backgroundl.jpg');
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.navbar-toggler:focus, .btn:focus{
+    box-shadow: none !important;
+}
+
+/*HEADER*/
+
+header{
+    z-index: 999;
+    transition: top 0.3s;
+}
+
+/*END HEADER*/
+
+/*SECTION BANNER*/
+
+#banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#banner .banner .banner_description_box{
+    flex: 7;
+}
+
+#banner .banner .banner_description_box .banner_description{
+    max-width: 38rem;
+
+    font-family: var(--ff-extra);
+
+    box-shadow: 0px 0px 0px;
+}
+
+#banner .banner .banner_description_box .banner_description .btn:focus{
+    outline: none !important;
+}
+
+#banner .banner .banner_description_box .banner_description .text-hover:hover{
+    color: #fff !important;
+}
+
+#banner .banner .banner_image_box{
+    flex: 3;
+}
+
+#banner .banner .banner_image{
+    width: 14rem;
+    height: 14rem;
+
+    border-radius: 50%;
+
+    background: url('../image/perfil/Aldomar130.JPG') no-repeat center;
+    background-size: 100% 100%;
+    object-fit: fill;
+}
+
+.modal-body p{
+    text-indent: 2rem;
+}
+/*END SECTION BANNER*/
+
+/* SECTION PROCEDURE*/
+
+#procedure{
+    margin-top: 0px;
+    animation: sectionExp 0.9s ease-in-out;
+}
+
+#procedure .procedure .Card{
+    width: 17.5rem !important;
+    height: auto;
+}
+
+#procedure .procedure .Card img{
+    width: 12rem !important;
+    height: 12rem !important;
+    border-radius: 50%;
+}
+
+#procedure .procedure .Card .card-body{
+    height: 15rem;
+}
+
+#procedure .procedure .Card a:hover{
+    color: #b4b3b3 !important;
+}
+
+#procedure .procedure .Card a:hover i{
+    color: #fff !important;
+}
+
+#procedure .procedure .Card .card-body p{
+    height: 100%;
+    overflow: auto;
+}
+
+/* Scroll custom */
+
+.card-body p::-webkit-scrollbar {
+    width: 5pt;
+  }
+  
+.card-body p::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10pt;
+  }
+  
+.card-body p::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10pt;
+  }
+  
+.card-body p::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+/*END SECTION PROCEDURE*/
+
+
+
+/*SECTION EXPERIENCE*/
+
+#experience{
+    margin-top: 0px;
+    transition: 1s;
+    animation: sectionExp 0.9s ease-in-out;
+}
+
+
+#experience .experience .card img{
+    width: 20rem !important;
+    border-radius: 3rem;
+}
+/*END SECTION EXPERIENCE*/
+
+/*SECTION LEARNING*/
+
+#learning{
+    margin-top: 0px;
+    animation: sectionLear 0.9s ease-in-out;
+}
+
+#learning .learning .card{
+    width: 17.5rem;
+}
+
+/*END SECTION LEARNING*/
+
+/*SECTION SOFTSKILLS*/
+
+#softSkills{
+    margin-top: 0px;
+    transition: 1s;
+    animation: sectionSoft 0.9s ease-in-out;
+}
+
+#softSkills .softSkills .card .card_img{
+    flex: 5;
+}
+
+#softSkills .softSkills .card .card_img img{
+    width: 100%;
+    height: 100%;
+}
+
+#softSkills .softSkills .card .card_content{
+    flex: 5;
+}
+
+/*END SECTION SOFTSKILLS*/
+
+/* SECTION HARDSKILLS */
+
+#hardSkills{
+    margin-top: 0px;
+    transition: 1s;
+    animation: sectionHard 0.9s ease-in-out;
+}
+
+#hardSkills .hardSkills .card_course{
+    width: 19rem;
+    height: 18rem;
+}
+
+#hardSkills .hardSkills .card img{
+    width: 4rem;
+}
+
+#hardSkills .hardSkills .card i{
+    color: #800080;
+}
+
+#hardSkills .hardSkills .card_content .card_informatica{
+    width: 10rem;
+}
+
+#hardSkills .hardSkills .card_informatica img{
+    width: 6rem;
+    height: 6rem;
+    margin: auto;
+    border-radius: 50%;
+}
+
+/*END SECTION COURSES */
+
+#conatct{
+    margin-top: 0px;
+    transition: 1s;
+    animation: sectionCont 0.9s ease-in-out;
+}
+
+.contact_form{
+    max-width: 40rem;
+}
+
+/*FOOTER*/
+
+footer .contact_info:hover i{
+    color: #000!important;
+}
+
+footer .contact_info:hover a{
+    color: #fff !important;
+}
+
+#textarea{
+    resize: none;
+}
+
+/* END FOOTER*/
+
+/* MEDIA QUERY */
+@media(max-width:768px){
+    #banner{
+        padding-top: 3rem;
+    }
+    #procedure .procedure .Card{
+        width: 14.5rem !important;
+    }
+    #experience .experience .card img{
+        width: 15rem !important;
+    }
+    #hardSkills .hardSkills .card_informatica{
+        width: 14rem;
+    }
+    #learning .learning .card{
+        width: 14.5rem;
+    }
+}
+
+@media(max-width:577px){
+    #banner .banner{
+        padding: 0;
+
+        display: flex;
+        flex-direction: column-reverse !important;
+    }
+    #banner .banner .banner_description_box{
+        width: 100%;
+    }
+    #procedure .procedure .Card{
+        width: 18.5rem !important;
+    }
+    #learning .learning .card{
+        width: 19.5rem;
+    }
+}
+
+@media(max-width:320px){
+    #procedure .procedure .Card{
+        width: 14.5rem !important;
+    }
+    #hardSkills .hardSkills .card_course{
+        width: 16rem;
+        height: 18rem;
+    }
+    #learning .learning .card{
+        width: 14.5rem !important;
+    }
+}
