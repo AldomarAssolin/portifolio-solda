@@ -14,7 +14,6 @@ app.set('view engine', 'handlebars')
 
 app.use(express.static('public'))
 
-//app.use('/toughts', toughtsRoutes)
 app.use('/', authRoutes)
 
 app.use('/', pagesRoutes)
